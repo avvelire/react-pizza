@@ -6,11 +6,11 @@ import { addItem, CartItem, selectCartItemById } from '../../redux/slices/cartSL
 type PizzaBlockProps = {
   id: number;
   imageUrl: string;
-  title:string;
+  title: string;
   types: number[];
   sizes: number[];
   price: number;
-}
+};
 
 const PizzaBlock: React.FC<PizzaBlockProps> = (props) => {
   const { id, imageUrl, title, types, sizes, price } = props;

@@ -7,7 +7,6 @@ import styles from './search.module.scss';
 const Search: React.FC = () => {
   const dispatch = useDispatch();
   const [value, setValue] = useState<string>('');
-  // const { setSearchValue } = useContext(SearchContext);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const clearInputValue = (e: React.MouseEvent<SVGSVGElement>) => {
