@@ -24,6 +24,6 @@ const Categories: React.FC = React.memo(() => {
       </ul>
     </div>
   );
-})
+});
 
 export default Categories;

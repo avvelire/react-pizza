@@ -23,7 +23,7 @@ type FetchPizzaParams = {
 export const fetchPizza = createAsyncThunk<PizzaItem[], FetchPizzaParams>('pizza/fetchPizzasStatus', async (params) => {
   const { category, sortBy, search } = params;
   const res = await axios.get<PizzaItem[]>(
-    `https://63f73180e8a73b486af268df.mockapi.io/items?${category}&sortBy=${sortBy}${search}`,
+    `https://6478960d362560649a2e1109.mockapi.io/items?${category}&sortBy=${sortBy}${search}`,
   );
   return res.data;
 });
@@ -35,7 +35,7 @@ enum Status{
 }
 
 interface PizzaSliceState {
-  items:PizzaItem[];
+  items: PizzaItem[];
   status: Status
 }
 
